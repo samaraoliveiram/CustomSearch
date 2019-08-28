@@ -1,0 +1,5 @@
+/node_modules
+/build
+.snow.config.json
+.DS_Store
+

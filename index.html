@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <script src="http://code.highcharts.com/highcharts.js"></script> -->
+  <!-- <script src="/src/scripts/GraphNacionalPPM/mockAjax.js"></script> -->
+  <!-- <script src="/build/GraphNacionalPPM.js"></script>; -->
+  <!-- <script src="/src/scripts/GraphRegionalPPM/mockAjax.js"></script> -->
+  <!-- <script src="/build/GraphRegionalPPM.js"></script> -->
+  <!-- Latest compiled and minified CSS -->
+  <!-- <script src="/src/scripts/InteractiveStoreMap/mockAjax.js"></script> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src=""></script>
+</head>
+
+<body>
+  <div id="customsearchroot"></div>
+  <div style="max-width: 1024px; margin-top: 20px">
+    <div id="root" style="height: 540px"></div>
+  </div>
+  <script src="/build/CustomSearch.js"></script>
+
+  <input id="short_description">oi</input>
+  <script>
+    console.log(CustomSearch)
+    CustomSearch.addForm({
+      getElement: () => document.getElementById("short_description")
+    });
+    CustomSearch.render();
+  </script>
+</body>
+
+</html>

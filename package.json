@@ -1,0 +1,59 @@
+{
+  "name": "customsearch",
+  "watch": {
+    "docs": {
+      "patterns": [
+        "src"
+      ],
+      "ignore": "node_modules"
+    },
+    "test": {
+      "patterns": [
+        "src",
+        "lib",
+        "tests"
+      ],
+      "ignore": "node_modules"
+    }
+  },
+  "scripts": {
+    "watch": "npm-watch",
+    "test": "clear && tap-prettify tests/**/*.js",
+    "dev": "webpack-dev-server --config webpack.config.development.js",
+    "docs": "jsdoc --readme ./README.md src -r -d docs --template node_modules/tui-jsdoc-template/ -c jsdoc.json"
+  },
+  "author": "samaramotta",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-regenerator-runtime": "^6.5.0",
+    "jaguarjs-jsdoc": "^1.1.0",
+    "jsondiffpatch": "^0.3.11",
+    "npm-watch": "^0.2.0",
+    "servicenow-uploader-webpack-plugin": "github:gfrancischelli/servicenow-uploader-webpack-plugin",
+    "tap-prettify": "0.0.2",
+    "tape": "^4.10.1",
+    "tui-jsdoc-template": "^1.2.2",
+    "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^3.1.0",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-messages": "^2.0.4"
+  },
+  "dependencies": {
+    "aphrodite": "^2.3.1",
+    "css-loader": "^0.28.11",
+    "emotion": "^6.0.3",
+    "fast-deep-equal": "^1.1.0",
+    "immutable": "^3.8.2",
+    "ramda": "^0.24.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "style-loader": "^0.18.2"
+  }
+}
